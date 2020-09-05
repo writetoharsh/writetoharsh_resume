@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
+}
+
+html {
+  box-sizing: border-box;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+.column {
+  float: left;
+  width: 33.3%;
+  margin-bottom: 16px;
+  padding: 0 8px;
+}
+
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  margin: 8px;
+}
+
+.about-section {
+  padding: 50px;
+  text-align: center;
+  background-color: #474e5d;
+  color: white;
+}
+
+.container {
+  padding: 0 16px;
+}
+
+.container::after, .row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+.title {
+  color: grey;
+}
+
+.button {
+  border: none;
+  outline: 0;
+  display: inline-block;
+  padding: 8px;
+  color: white;
+  background-color: #000;
+  text-align: center;
+  cursor: pointer;
+  width: 100%;
+}
+
+.button:hover {
+  background-color: #555;
+}
+
+@media screen and (max-width: 650px) {
+  .column {
+    width: 100%;
+    display: block;
+  }
+}
+</style>
+</head>
+<body>
+
+<div class="about-section">
+  <h1>Education</h1>
+  <p>Apart from my education, I love to read about what's going around the world.</p>
+  <p>If you ask me what I would like to pursue after my Bachelors, the answer is going to be an MBA definitely.</p>
+</div>
+
+<h2 style="text-align:center">Educación</h2>
+<div class="row">
+  <div class="column">
+    <div class="card">
+      <div class="container">
+        <h2>Army Public School Danapur Cantonment</h2>
+        <p class="title">Matriculation</p>
+        <p>CGPA 10</p>
+        <img src="https://i2.wp.com/www.muftjobs.com/wp-content/uploads/2019/05/aps-logo.jpg?fit=206%2C245&ssl=1" alt="APSD" width="173" height="173">
+      </div>
+    </div>
+  </div>
+
+  <div class="column">
+    <div class="card">
+      <div class="container">
+        <h2>Army Public School Bikaner</h2>
+        <p class="title">10+2/ Intermediate</p>
+        <p>Percentage 85.8</p>
+        <img src="https://lh3.googleusercontent.com/proxy/mmH1nvAxL1uzJFyVtWykkGGihj5uBa4RajJVsaZ-VKVU6S6Au2Mck_KtKV47bm3P7fC0aKNcLI-21ne6Kz126MTzpePxhV69Pe5pbpNdh84PrEGGYFUHMrI" alt="APSB" width="200" height="200">
+      </div>
+    </div>
+  </div>
+
+  <div class="column">
+    <div class="card">
+      <div class="container">
+        <h2>Sikkim Manipal University</h2>
+        <p class="title">Bachelor of Technology</p>
+        <p>Branch Computer Science Engineering</p>
+        <img src="https://www.kindpng.com/picc/m/641-6412286_smit-logo-large-sikkim-manipal-institute-of-technology.png" alt="SMU" width="200" height="200">
+      </div>
+    </div>
+  </div>
+</div>
+
+</body>
+</html>
